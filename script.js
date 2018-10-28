@@ -60,7 +60,9 @@ class ofDrill {
     }
 }
 
-let drill1 = new ofDrill ('Hex', 'missing', 'Counterclockwise'); // should return false
-let drill2 = new ofDrill ('Phillip', 'charging', 'Clockwise'); // should return use and change the bit and rotation if need to
-let drill3 = new ofDrill ('Slot drive', 'being use', 'Counterclockwise');// should return false
-let drill4 = new ofDrill ('Hex', 'idling', 'Counterclockwise');// should return use and change the bit and rotation if need to
+let drill1 = new ofDrill ('Hex', 'missing', 'Counterclockwise');
+let drill2 = new ofDrill ('Phillip', 'charging', 'Clockwise');
+let drill3 = new ofDrill ('Slot drive', 'being use', 'Counterclockwise');
+let drill4 = new ofDrill ('Hex', 'idling', 'Counterclockwise');
+// drill1, drill3 should return false if you run it in the function
+// drill2 and drill4 should return true and change the property of object to what required to be use for
