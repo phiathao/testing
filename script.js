@@ -50,7 +50,7 @@ class ofDrill {
 // }
 
  function checkDrill(drill0) {
-	if ( drill.status === 'idling' || drill.status === 'charging') {
+	if ( drill0.status === 'idling' || drill0.status === 'charging') {
         drill0.bit = bitNeeded;
         drill0.rotation = 'Clockwise';
         return true;
@@ -60,7 +60,7 @@ class ofDrill {
     }
 }
 
-let drill1 = new ofDrill ('Hex', 'missing', 'Counterclockwise');
-let drill2 = new ofDrill ('Phillip', 'charging', 'Clockwise');
-let drill3 = new ofDrill ('Slot drive', 'being use', 'Counterclockwise');
-let drill4 = new ofDrill ('Hex', 'idling', 'Counterclockwise');
+let drill1 = new ofDrill ('Hex', 'missing', 'Counterclockwise'); // should return false
+let drill2 = new ofDrill ('Phillip', 'charging', 'Clockwise'); // should return use and change the bit and rotation if need to
+let drill3 = new ofDrill ('Slot drive', 'being use', 'Counterclockwise');// should return false
+let drill4 = new ofDrill ('Hex', 'idling', 'Counterclockwise');// should return use and change the bit and rotation if need to
